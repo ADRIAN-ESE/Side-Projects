@@ -1,0 +1,137 @@
+[
+  {
+    "customer": {
+      "name": "Lucas Grey",
+      "address": "NO.12 Afro Road",
+      "phone": "+2349076459867"
+    },
+    "car": {
+      "make": "Alpine",
+      "model": "A110",
+      "year": 2022,
+      "price": 65000.0
+    },
+    "payment_method": "Card",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "LUCAS FRO",
+      "address": "NO.32 ZERO DRIVE",
+      "phone": "+2318765489"
+    },
+    "car": {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": 2024,
+      "price": 26000.0
+    },
+    "payment_method": "BANK TRANSFER",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "anna marks",
+      "address": "NO.23 GREY DRIVE",
+      "phone": "+123786598"
+    },
+    "car": {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": 2024,
+      "price": 26000.0
+    },
+    "payment_method": "card",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "Ibrahim",
+      "address": "Sani",
+      "phone": "+2348139417386"
+    },
+    "car": {
+      "make": "Mercedes-Benz",
+      "model": "S-Class",
+      "year": 2023,
+      "price": 120000.0
+    },
+    "payment_method": "card",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "ADRIAN MILES",
+      "address": "NO.23 AFRO DRIVE",
+      "phone": "+234876543980"
+    },
+    "car": {
+      "make": "Ferrari",
+      "model": "SF90 Stradale",
+      "year": 2022,
+      "price": 550000.0
+    },
+    "payment_method": "CARD",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "DAVID SMALLS",
+      "address": "NO.21 LUFFY STREET",
+      "phone": "+2348976547897"
+    },
+    "car": {
+      "make": "Alpine",
+      "model": "A110",
+      "year": 2022,
+      "price": 65000.0
+    },
+    "payment_method": "BANK TRANSFER",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "MATT",
+      "address": "LUGBE",
+      "phone": "1234567890"
+    },
+    "car": {
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2021,
+      "price": 40000.0
+    },
+    "payment_method": "CARD",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "Lucas",
+      "address": "Martins",
+      "phone": "+23467890345"
+    },
+    "car": {
+      "make": "BMW",
+      "model": "M4 Competition",
+      "year": 2023,
+      "price": 80000.0
+    },
+    "payment_method": "card",
+    "purchase_date": "2025-08-25 09:50:14"
+  },
+  {
+    "customer": {
+      "name": "VICTOR DENIM",
+      "address": "MAX DRIVE15, CALIFONIA, USA",
+      "phone": "123456789"
+    },
+    "car": {
+      "make": "Chevrolet",
+      "model": "Z SERIES",
+      "year": 2024,
+      "price": 150000.0
+    },
+    "payment_method": "Cash",
+    "purchase_date": "2025-08-25 09:50:14"
+  }
+]

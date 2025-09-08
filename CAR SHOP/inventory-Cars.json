@@ -1,0 +1,116 @@
+[
+  {
+    "make": "Lamborghini",
+    "model": "Aventador SVJ",
+    "year": 2023,
+    "price": 550000.0
+  },
+  {
+    "make": "Ferrari",
+    "model": "SF90 Stradale",
+    "year": 2024,
+    "price": 625000.0
+  },
+  {
+    "make": "BMW",
+    "model": "M5 Competition",
+    "year": 2023,
+    "price": 115000.0
+  },
+  {
+    "make": "Tesla",
+    "model": "Model S Plaid",
+    "year": 2024,
+    "price": 130000.0
+  },
+  {
+    "make": "McLaren",
+    "model": "765LT",
+    "year": 2022,
+    "price": 400000.0
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "year": 2023,
+    "price": 450000.0
+  },
+  {
+    "make": "Aston Martin",
+    "model": "DBS Superleggera",
+    "year": 2023,
+    "price": 330000.0
+  },
+  {
+    "make": "Nissan",
+    "model": "GT-R Nismo",
+    "year": 2023,
+    "price": 220000.0
+  },
+  {
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "price": 25000.0
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "year": 2020,
+    "price": 22000.0
+  },
+  {
+    "make": "Lamborghini",
+    "model": "Aventador SVJ",
+    "year": 2023,
+    "price": 600000.0
+  },
+  {
+    "make": "McLaren",
+    "model": "765LT",
+    "year": 2024,
+    "price": 400000.0
+  },
+  {
+    "make": "Bugatti",
+    "model": "Chiron Super Sport",
+    "year": 2021,
+    "price": 3900000.0
+  },
+  {
+    "make": "Porsche",
+    "model": "911 GT3 RS",
+    "year": 2023,
+    "price": 250000.0
+  },
+  {
+    "make": "Audi",
+    "model": "RS 5",
+    "year": 2022,
+    "price": 78000.0
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "AMG C 63 S",
+    "year": 2024,
+    "price": 90000.0
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Corvette Z06",
+    "year": 2023,
+    "price": 110000.0
+  },
+  {
+    "make": "Audi",
+    "model": "RS 7A",
+    "year": 2024,
+    "price": 250000.0
+  },
+  {
+    "make": "Paganine",
+    "model": "Spider",
+    "year": 2024,
+    "price": 450000.0
+  }
+]
