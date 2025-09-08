@@ -1,0 +1,82 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic",
+        "price": 10.99,
+        "stock": 5,
+        "book_id": "gatsby01"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "price": 8.99,
+        "stock": 7,
+        "book_id": "orwell84"
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "price": 12.5,
+        "stock": 10,
+        "book_id": "hobbit01"
+    },
+    {
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "genre": "Science Fiction",
+        "price": 14.99,
+        "stock": 6,
+        "book_id": "dune001"
+    },
+    {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "genre": "Mystery/Thriller",
+        "price": 11.99,
+        "stock": 8,
+        "book_id": "davinci1"
+    },
+    {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "genre": "Non-Fiction",
+        "price": 16.0,
+        "stock": 4,
+        "book_id": "sapiens1"
+    },
+    {
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "genre": "Biography",
+        "price": 18.0,
+        "stock": 4,
+        "book_id": "become01"
+    },
+    {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "genre": "Self-Help",
+        "price": 13.99,
+        "stock": 9,
+        "book_id": "atomic01"
+    },
+    {
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "genre": "Programming",
+        "price": 30.0,
+        "stock": 3,
+        "book_id": "cleancode"
+    },
+    {
+        "title": "Python Crash Course",
+        "author": "Eric Matthes",
+        "genre": "Programming",
+        "price": 25.0,
+        "stock": 6,
+        "book_id": "pycourse"
+    }
+]
