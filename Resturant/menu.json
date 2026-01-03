@@ -1,0 +1,53 @@
+{
+    "pizza": {
+        "quantity": 12,
+        "price": 25.0,
+        "description": "Classic pizza with tomato, cheese, and your favorite toppings."
+    },
+    "burger": {
+        "quantity": 30,
+        "price": 12.5,
+        "description": "Juicy beef patty on a sesame seed bun with lettuce and tomato."
+    },
+    "fries": {
+        "quantity": 39,
+        "price": 11.25,
+        "description": "Crispy golden french fries, lightly salted."
+    },
+    "soda": {
+        "quantity": 173,
+        "price": 5.5,
+        "description": "A cold, refreshing carbonated beverage of your choice."
+    },
+    "chicken wings": {
+        "quantity": 49,
+        "price": 11.75,
+        "description": "Spicy and savory chicken wings, perfect for sharing."
+    },
+    "steak": {
+        "quantity": 44,
+        "price": 50.25,
+        "description": "A premium cut of steak, grilled to perfection."
+    },
+    "hot dog": {
+        "quantity": 35,
+        "price": 25.0,
+        "description": "An all-American classic hot dog in a soft bun."
+    },
+    "beer": {
+        "quantity": 36,
+        "price": 35.0,
+        "description": "A cold, crisp lager to complement your meal."
+    },
+    "pork ribs": {
+        "quantity": 50,
+        "price": 15.0,
+        "description": "Tender pork ribs smothered in BBQ sauce."
+    },
+    "corn Dog": {
+        "quantity": 1000,
+        "price": 15.2,
+        "description": "Yummy",
+        "category": "Yummy Snack Glazed with Roosted Corn"
+    }
+}

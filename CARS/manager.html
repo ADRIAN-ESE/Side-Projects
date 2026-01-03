@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Cars - Management Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="main-header">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Orion Cars - Management</h1>
+            <nav class="flex items-center space-x-6">
+                <ul class="flex space-x-6">
+                    <li><a href="customer.html" class="nav-link">Customer View</a></li>
+                </ul>
+                <button onclick="logout()" class="btn-secondary">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card-section">
+                <h2 class="section-title">Add a New Car</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label for="car-make" class="input-label">Make:</label>
+                        <input type="text" id="car-make" placeholder="e.g., Toyota">
+                    </div>
+                    <div>
+                        <label for="car-model" class="input-label">Model:</label>
+                        <input type="text" id="car-model" placeholder="e.g., Camry">
+                    </div>
+                    <div>
+                        <label for="car-year" class="input-label">Year:</label>
+                        <input type="number" id="car-year" placeholder="e.g., 2022">
+                    </div>
+                    <div>
+                        <label for="car-price" class="input-label">Price ($):</label>
+                        <input type="number" id="car-price" placeholder="e.g., 25000">
+                    </div>
+                    <button onclick="addCar()" class="w-full btn-primary">
+                        Add Car to Inventory
+                    </button>
+                </div>
+                <hr class="my-6 border-gray-200">
+                <h2 class="section-title">Import Car Inventory</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label for="json-file-input" class="input-label">Select a JSON file:</label>
+                        <input type="file" id="json-file-input" accept=".json">
+                    </div>
+                    <button onclick="importInventory()" class="w-full btn-primary">
+                        Import Inventory
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-section md:col-span-2">
+                <h2 class="section-title">Current Inventory</h2>
+                <div id="inventory-list" class="space-y-4">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-section mt-8">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="section-title mb-0">Sales Statistics</h2>
+                <p class="text-xl font-bold text-green-600">Total Revenue: <span id="total-revenue">$0</span></p>
+            </div>
+            <h2 class="section-title mt-4">Purchase History</h2>
+            <div id="purchase-history-list">
+            </div>
+        </div>
+    </main>
+
+    <div id="message-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 class="modal-title" id="modal-title"></h3>
+            <p class="mt-2" id="modal-message"></p>
+            <div class="mt-4 flex justify-end">
+                <button onclick="closeModal()" class="btn-primary">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

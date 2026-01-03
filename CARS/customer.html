@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Cars - Customer View</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="main-header">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Orion Cars - Customer View</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="welcome.html" class="nav-link">Home</a></li>
+                    <li><a href="login.html" class="nav-link">Manager Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 flex-grow">
+        <div id="available-cars-section" class="card-section">
+            <h2 class="section-title">Available Cars</h2>
+            <div id="customer-inventory-list" class="space-y-4">
+                </div>
+        </div>
+
+        <div id="purchase-car-section" class="card-section hidden">
+            <h2 class="section-title">Purchase Car</h2>
+            <p id="car-purchase-details" class="text-lg mb-4"></p>
+            <div class="space-y-4">
+                <div>
+                    <label for="customer-name" class="input-label">Your Name:</label>
+                    <input type="text" id="customer-name" placeholder="John Doe">
+                </div>
+                <div>
+                    <label for="customer-address" class="input-label">Your Address:</label>
+                    <input type="text" id="customer-address" placeholder="123 Car Lane">
+                </div>
+                <div>
+                    <label for="customer-phone" class="input-label">Your Phone:</label>
+                    <input type="tel" id="customer-phone" placeholder="555-555-5555">
+                </div>
+                <div>
+                    <label class="input-label">Choose a Color:</label>
+                    <div id="color-options" class="flex space-x-2">
+                        </div>
+                </div>
+                <div>
+                    <label for="payment-method" class="input-label">Payment Method:</label>
+                    <select id="payment-method" class="w-full">
+                        <option value="Cash">Cash</option>
+                        <option value="Debit Card">Debit Card</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Bank Transfer">Bank Transfer</option>
+                        <option value="Crypto">Crypto</option>
+                    </select>
+                </div>
+                <button onclick="confirmPurchase()" class="w-full btn-success">
+                    Confirm Purchase
+                </button>
+                <button onclick="cancelPurchase()" class="w-full btn-secondary">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div id="message-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 class="modal-title" id="modal-title"></h3>
+            <p class="mt-2" id="modal-message"></p>
+            <div class="mt-4 flex justify-end">
+                <button onclick="closeModal()" class="btn-primary">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

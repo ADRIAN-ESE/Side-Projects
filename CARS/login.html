@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Cars - Manager Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="login-card">
+            <h1 class="text-3xl font-bold mb-6">Manager Login</h1>
+            <div class="space-y-4">
+                <div>
+                    <label for="username" class="input-label">Username:</label>
+                    <input type="text" id="username" value="manager" disabled>
+                </div>
+                <div>
+                    <label for="password" class="input-label">Password:</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <button onclick="managerLogin()" class="w-full btn-primary">
+                    Login
+                </button>
+            </div>
+            <p class="mt-4 text-center">
+                <a href="welcome.html" class="text-blue-200 hover:underline">Return to Home</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
