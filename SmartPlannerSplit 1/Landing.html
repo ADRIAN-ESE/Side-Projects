@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | SmartPlanner</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4cafef, #4caf50);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: #ff9800;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background: #e68a00;
+    }
+    section {
+      padding: 40px 20px;
+      background: white;
+      color: #333;
+    }
+    section h2 {
+      margin-bottom: 20px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .feature {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SmartPlanner</h1>
+    <p>Your all-in-one tool to manage tasks, track progress, and stay organized effortlessly.</p>
+    <a href="login.html" class="cta-btn">Get Started</a>
+  </header>
+
+  <section>
+    <h2>Why Choose SmartPlanner?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>📅 Task Management</h3>
+        <p>Add, prioritize, and track tasks with ease.</p>
+      </div>
+      <div class="feature">
+        <h3>✅ Progress Tracking</h3>
+        <p>See your completion rate in real-time.</p>
+      </div>
+      <div class="feature">
+        <h3>🌙 Dark Mode</h3>
+        <p>Switch themes to suit your style.</p>
+      </div>
+      <div class="feature">
+        <h3>📤 Import & Export</h3>
+        <p>Save and load your tasks anytime.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

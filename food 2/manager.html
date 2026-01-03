@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manager Dashboard — Orion Kitchen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar glassy">
+    <h2>👨‍💼 Orion Kitchen Manager</h2>
+    <div class="nav-actions">
+      <button id="toggleMode" class="btn small">🌙 Mode</button>
+      <a href="index.html" class="btn small danger">← Home</a>
+    </div>
+  </div>
+
+  <div id="loginSection" class="centered glassy fade-in">
+    <h2>🔐 Manager Login</h2>
+    <input type="password" id="managerPassword" placeholder="Enter Manager Password" />
+    <button id="loginBtn" class="btn">Login</button>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <div id="dashboardSection" class="hidden fade-in dashboard glassy">
+    <h2 class="section-title">Manager Dashboard</h2>
+    <p class="muted">Manage inventory, sales, and reports.</p>
+
+    <div class="stats-bar">
+      <div class="stat-card accent">
+        <h4>Total Items</h4><p id="totalItems">0</p>
+      </div>
+      <div class="stat-card warn">
+        <h4>Low Stock</h4><p id="lowStock">0</p>
+      </div>
+      <div class="stat-card success">
+        <h4>Total Earnings</h4><p id="totalEarnings">$0.00</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="addItemBtn" class="btn success">+ Add Item</button>
+      <button id="exportBtn" class="btn warn">⬇ Export CSV</button>
+      <button id="viewSalesBtn" class="btn">📊 View Sales Report</button>
+      <button id="changePwBtn" class="btn accent">🔑 Change Password</button>
+    </div>
+
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Item</th><th>Qty</th><th>Price</th><th>Description</th><th>Category</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Item Modal -->
+  <div id="itemModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">Add New Item</h3>
+      <input id="itemName" placeholder="Item Name" />
+      <input id="itemQty" type="number" placeholder="Quantity" />
+      <input id="itemPrice" type="number" step="0.01" placeholder="Price" />
+      <input id="itemCategory" placeholder="Category" />
+      <textarea id="itemDesc" placeholder="Description"></textarea>
+      <div class="modal-actions">
+        <button id="saveItemBtn" class="btn success">Save</button>
+        <button id="cancelItemBtn" class="btn danger">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sales Report Modal -->
+  <div id="salesModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Sales Report</h3>
+      <div class="filter-bar">
+        <input type="date" id="startDate" /> to
+        <input type="date" id="endDate" />
+        <button id="filterSalesBtn" class="btn small">Filter</button>
+        <button id="downloadPdfBtn" class="btn small success">⬇ PDF</button>
+      </div>
+      <div id="salesList" class="sales-list"></div>
+      <p id="totalSalesSum" class="muted"></p>
+      <div class="modal-actions">
+        <button id="closeSalesBtn" class="btn danger">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

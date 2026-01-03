@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer — Orion Kitchen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="customer-bg">
+  <div class="navbar glassy">
+    <h2>🍛 Orion Kitchen Menu</h2>
+    <div class="nav-actions">
+      <a href="index.html" class="btn small danger">← Home</a>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="menu-section">
+      <h3>Menu</h3>
+      <input id="searchBox" placeholder="Search for meals..." />
+      <div id="menuList" class="menu-list"></div>
+    </div>
+
+    <div class="cart-section">
+      <h3>🛒 Your Cart</h3>
+      <div id="cartItems" class="cart-items"></div>
+      <p id="totalDisplay">Total: $0.00</p>
+      <button id="checkoutBtn" class="btn success">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Payment Summary</h3>
+      <div id="receiptPreview"></div>
+      <select id="paymentMethod">
+        <option value="cash">Cash</option>
+        <option value="card">Card</option>
+        <option value="transfer">Bank Transfer</option>
+      </select>
+      <div class="modal-actions">
+        <button id="confirmCheckout" class="btn success">Confirm</button>
+        <button id="cancelCheckout" class="btn danger">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

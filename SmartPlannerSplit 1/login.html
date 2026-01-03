@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | SmartPlanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-screen">
+  <div class="login-box">
+    <h2>Login to SmartPlanner</h2>
+    <input id="login-username" type="text" placeholder="Username">
+    <input id="login-password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>No account? Just enter a username & password.</p>
+  </div>
+  <script>
+    function login() {
+      const username = document.getElementById('login-username').value.trim();
+      const password = document.getElementById('login-password').value.trim();
+      if (!username || !password) {
+        alert('Enter username and password');
+        return;
+      }
+      const users = JSON.parse(localStorage.getItem('users') || '{}');
+      if (users[username] && users[username].password !== password) {
+        alert('Incorrect password');
+        return;
+      }
+      if (!users[username]) {
+        users[username] = { password, tasks: [] };
+        localStorage.setItem('users', JSON.stringify(users));
+      }
+      localStorage.setItem('currentUser', username);
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

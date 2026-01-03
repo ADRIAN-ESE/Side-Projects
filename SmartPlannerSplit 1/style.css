@@ -1,0 +1,200 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f0f4f8;
+  color: #333;
+  transition: 0.3s;
+}
+.hidden { display: none; }
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+.login-box {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-box input, .login-box button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.login-box button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* ...existing code... */
+body.dark-mode {
+  background: #181c1f;
+  color: #f0f4f8;
+}
+body.dark-mode .sidebar {
+  background: #23272b;
+  color: #fff;
+}
+body.dark-mode .main-panel {
+  background: #23272b;
+  color: #f0f4f8;
+}
+body.dark-mode .task-list li {
+  background: #23272b;
+  color: #f0f4f8;
+}
+body.dark-mode .feature,
+body.dark-mode .login-box {
+  background: #23272b;
+  color: #f0f4f8;
+}
+body.dark-mode .task-controls input,
+body.dark-mode .task-controls select {
+  background: #23272b;
+  color: #f0f4f8;
+  border: 1px solid #444;
+}
+body.dark-mode .task-controls button {
+  background: #4caf50;
+}
+body.dark-mode .logout-btn {
+  background: #b71c1c;
+}
+.main-panel {
+  flex-grow: 1;
+  padding: 20px;
+  background-image: url('words of encouragement.jpg'), linear-gradient(135deg, #e3f2fd 0%, #e8f5e9 100%);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+.cta-btn:focus, button:focus, input:focus, select:focus {
+  outline: 2px solid #4cafef;
+  outline-offset: 2px;
+}
+/* ...existing code... */
+@media(min-width: 768px) {
+  .dashboard { flex-direction: row; }
+}
+.sidebar {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+@media(min-width: 768px) {
+  .sidebar { width: 220px; }
+}
+.sidebar nav button, .logout-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  cursor: pointer;
+}
+.logout-btn {
+  background: crimson;
+}
+.main-panel {
+  flex-grow: 1;
+  padding: 20px;
+  background-image: url(url(words of encouragement.jpg));
+}
+.task-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.task-controls input, .task-controls select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.task-controls button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+.task-list li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list li.high { border-left: 5px solid #dc3545; }
+.task-list li.medium { border-left: 5px solid #ffc107; }
+.task-list li.low { border-left: 5px solid #28a745; }
+.task-list button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.avatar-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.avatar-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 32px;
+  line-height: 64px;
+  margin: 0 auto 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.username-display {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.progress-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+.progress-circle svg {
+  display: block;
+}
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}

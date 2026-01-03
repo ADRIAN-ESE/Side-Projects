@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartPlanner Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="dashboard" class="dashboard">
+  <aside class="sidebar">
+    <div class="avatar-wrapper">
+      <div id="user-avatar" class="avatar-circle">👤</div>
+      <div id="user-display" class="username-display"></div>
+      <div class="progress-circle">
+        <svg width="80" height="80">
+          <circle cx="40" cy="40" r="35" stroke="#ccc" stroke-width="8" fill="none"/>
+          <circle id="progress-ring" cx="40" cy="40" r="35" stroke="#4caf50" stroke-width="8" fill="none"
+                  stroke-dasharray="219.91" stroke-dashoffset="219.91" transform="rotate(-90 40 40)"/>
+        </svg>
+        <div id="progress-percent" class="progress-label">0%</div>
+      </div>
+    </div>
+    <nav>
+      <button onclick="showSection('tasks')">Tasks</button>
+      <button onclick="showSection('completed')">Completed</button>
+      <button onclick="showSection('settings')">Settings</button>
+    </nav>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </aside>
+
+  <main class="main-panel">
+    <section id="tasks-section">
+      <div class="task-controls">
+        <input id="task-input" type="text" placeholder="New task...">
+        <input id="task-date" type="date">
+        <select id="task-priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+
+    <section id="completed-section" class="hidden">
+      <h2>Completed Tasks</h2>
+      <ul id="completed-list" class="task-list"></ul>
+    </section>
+
+    <section id="settings-section" class="hidden">
+      <h2>Settings</h2>
+      <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    <button onclick="exportTasks()">Export Tasks</button>
+    <button onclick="showImport()">Import Tasks</button>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
