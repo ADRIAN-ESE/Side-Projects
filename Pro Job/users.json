@@ -1,0 +1,20 @@
+{
+    "001E": {
+        "full_name": "Lucas Sams",
+        "email": "LucasSams@yahoo.com",
+        "age": "25",
+        "occupation": "Data Researcher",
+        "location": "New York, USA",
+        "role": "Senior",
+        "promotion_requests": [
+            {
+                "requested_role": "Manager",
+                "current_role": "Senior",
+                "status": "denied",
+                "date": "2026-03-20",
+                "resolved_date": "2026-03-20"
+            }
+        ],
+        "date_added": "2026-03-20"
+    }
+}
