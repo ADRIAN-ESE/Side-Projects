@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="hud">
+      <div id="hud-left">
+        <span id="hud-level">Level 1</span>
+        <span id="hud-score">Score: 0</span>
+      </div>
+      <div id="hud-right">
+        <span id="hud-lives">❤️❤️❤️</span>
+        <span id="hud-speed">Speed: 0</span>
+      </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui-layer">
+      <div id="startScreen" class="overlay">
+        <div class="menu-panel">
+          <h1>🏎️ Road Racer</h1>
+          <p id="welcome-msg">Welcome, Player!</p>
+          <p class="subtitle">Race through 5 challenging levels!<br>Dodge obstacles and reach the finish line!</p>
+          <div class="controls-info">
+            <span class="key">← →</span> or <span class="key">A D</span> to steer<br>
+            <span class="key">↑ ↓</span> or <span class="key">W S</span> to accelerate/brake
+          </div>
+          <button id="btnStart">START RACE</button>
+          <p id="savedProgress" class="saved-info"></p>
+        </div>
+      </div>
+      <div id="levelComplete" class="overlay" style="display:none;">
+        <div class="menu-panel">
+          <h2>🏁 Level Complete!</h2>
+          <p id="levelScore">Score: 0</p>
+          <p id="levelBonus">Time Bonus: 0</p>
+          <button id="btnNextLevel">NEXT LEVEL</button>
+        </div>
+      </div>
+      <div id="gameOver" class="overlay" style="display:none;">
+        <div class="menu-panel">
+          <h2>💥 Game Over!</h2>
+          <p id="finalScore">Final Score: 0</p>
+          <p id="bestScore">Best Score: 0</p>
+          <button id="btnRestart">RESTART</button>
+        </div>
+      </div>
+      <div id="gameWon" class="overlay" style="display:none;">
+        <div class="menu-panel">
+          <h2>🏆 You Won!</h2>
+          <p>All levels completed!</p>
+          <p id="wonScore">Final Score: 0</p>
+          <p id="wonBest">Best Score: 0</p>
+          <button id="btnPlayAgain">PLAY AGAIN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="GameObject.js"></script>
+  <script src="Car.js"></script>
+  <script src="Obstacle.js"></script>
+  <script src="RoadStripe.js"></script>
+  <script src="PowerUp.js"></script>
+  <script src="Particle.js"></script>
+  <script src="LevelConfig.js"></script>
+  <script src="Game.js"></script>
+  <script>
+    const game = new Game(document.getElementById('gameCanvas'));
+    window.game = game;
+    game.start();
+  </script>
+</body>
+</html>
